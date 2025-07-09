@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
+    "dev": "nodemon server.js",
     "dev:watch": "nodemon --watch src --ext js,json server.js",
     "dev:debug": "nodemon --inspect server.js",
     "test": "NODE_ENV=test jest",
@@ -30,7 +31,7 @@
     "docker:logs": "docker-compose logs -f api",
     "health": "node healthcheck.js",
     "validate": "npm run lint:check && npm run format:check && npm run test:ci",
-    "prepare": "",
+    "prepare": "husky install",
     "precommit": "lint-staged",
     "security:audit": "npm audit --audit-level moderate",
     "security:fix": "npm audit fix",
