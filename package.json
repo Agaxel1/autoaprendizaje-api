@@ -31,7 +31,7 @@
     "docker:logs": "docker-compose logs -f api",
     "health": "node healthcheck.js",
     "validate": "npm run lint:check && npm run format:check && npm run test:ci",
-    "prepare": "husky install",
+    "prepare": "",
     "precommit": "lint-staged",
     "security:audit": "npm audit --audit-level moderate",
     "security:fix": "npm audit fix",
